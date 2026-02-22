@@ -1,0 +1,80 @@
+/* Define o estilo geral da página */
+body {
+    background-color: #0b6623; /* Cor verde simulando gramado */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    color: white; /* Cor do texto */
+    display: flex; /* Ativa flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da tela */
+}
+
+/* Container principal do jogo */
+.container {
+    width: 420px; /* Largura fixa do painel */
+    background-color: #0e7a30; /* Verde mais claro */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    text-align: center; /* Centraliza textos internos */
+}
+
+/* Parte superior do jogo (escudos + placar) */
+.topo-jogo {
+    display: flex; /* Layout horizontal */
+    justify-content: space-between; /* Espaço entre os times */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* Bloco individual de cada time */
+.time {
+    width: 120px; /* Largura fixa para manter alinhamento */
+}
+
+/* Imagem do escudo */
+.time img {
+    width: 80px; /* Tamanho fixo */
+    height: 80px;
+}
+
+/* Nome do time */
+.time h2 {
+    font-size: 14px; /* Fonte menor */
+    margin-top: 5px; /* Espaço acima do nome */
+}
+
+/* Estilo do placar (ex: 2 x 1) */
+.placar {
+    font-size: 32px; /* Número grande */
+    font-weight: bold; /* Negrito */
+}
+
+/* Área que mostra o tempo da partida */
+.tempo {
+    margin: 10px 0; /* Espaçamento vertical */
+    font-size: 18px; /* Tamanho intermediário */
+}
+
+/* Estilização padrão do botão */
+button {
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho do texto */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda cursor ao passar mouse */
+}
+
+/* Área onde aparecem os eventos da partida */
+.eventos {
+    margin-top: 15px; /* Espaço acima */
+    max-height: 120px; /* Altura máxima fixa */
+    overflow-y: auto; /* Ativa rolagem vertical */
+    background-color: rgba(0,0,0,0.2); /* Fundo escuro transparente */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 14px; /* Texto menor */
+    text-align: left; /* Alinha texto à esquerda */
+}
+/* Classe usada para esconder elementos (ex: botão durante a partida) */
+.oculto {
+    display: none;
+}

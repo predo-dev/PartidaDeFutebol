@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo de Técnico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="topo-jogo">
+            <div class="time casa">
+                <img src="escudos/fortaleza_esc.png" alt="Time da Casa">
+                <h2>Fortaleza EC</h2>
+            </div>
+
+            <div class="placar">
+                <span id="gols-casa">0</span>
+                <span>x</span>
+                <span id="gols-visitante">0</span>
+            </div>
+
+            <div class="time visitante">
+                <img src="escudos/ceara_esc.png" alt="Time Visitante">
+                <h2>Ceará SC</h2>
+            </div>
+        </div>
+
+        <div class="tempo">
+            <span id="relogio">0'</span>
+        </div>
+
+        <button onclick="iniciarPartida()" id="btn-comecar">Começar Partida</button>
+
+        <div class="eventos" id="eventos"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
